@@ -7,6 +7,18 @@
 * Update the DOM based on the mock server's response
 
 ## Introduction
+to make the heart appear red
+* When a user clicks on a full heart:
+  * Change the heart back to an empty heart
+  * Remove the `.activated-heart` class
+* Keep all your styling rules entirely in `style.css`. Do not manipulate any
+  `.style` properties.
+* Only manipulate the DOM once the server request responds. Do not make the
+  heart full until you're inside a successful `.then` block.
+
+> Note: The tests will only check for the first part of the specification
+> (adding the `hidden` class). You should verify the rest of the behavior
+> yourself, by checking the page in the browser.
 
 Remember when we started this exploration of the "Simple Liker" application?
 You might not have been sure that you would make it to this point, but you
@@ -53,19 +65,7 @@ Here's the specification:
     * Use `setTimeout` to hide the modal after 3 seconds (add the `.hidden` class)
   * When the "server" returns a success status:
     * Change the heart to a full heart
-    * Add the `.activated-heart` class to make the heart appear red
-* When a user clicks on a full heart:
-  * Change the heart back to an empty heart
-  * Remove the `.activated-heart` class
-* Keep all your styling rules entirely in `style.css`. Do not manipulate any
-  `.style` properties.
-* Only manipulate the DOM once the server request responds. Do not make the
-  heart full until you're inside a successful `.then` block.
-
-> Note: The tests will only check for the first part of the specification
-> (adding the `hidden` class). You should verify the rest of the behavior
-> yourself, by checking the page in the browser.
-
+    * Add the `.activated-heart` class 
 ## Conclusion
 
 That's it! Congratulations. You're now a real-deal front-end developer! You can
